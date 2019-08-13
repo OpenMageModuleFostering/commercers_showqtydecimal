@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Commercers_ShowQtyDecimal>
+            <active>true</active>
+            <version>1.0.1</version>
+            <codePool>local</codePool>
+        </Commercers_ShowQtyDecimal>
+    </modules>
+</config>

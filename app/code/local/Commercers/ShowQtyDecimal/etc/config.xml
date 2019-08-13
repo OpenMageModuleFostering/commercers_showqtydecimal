@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Commercers_ShowQtyDecimal>
+            <version>1.0.1</version>
+        </Commercers_ShowQtyDecimal>
+    </modules>
+
+    <global>
+        <helpers>
+            <commercers_showQtyDecimal>
+                <class>Commercers_ShowQtyDecimal_Helper</class>
+            </commercers_showQtyDecimal>
+        </helpers>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <catalog_product_edit_tab_inventory>Commercers_ShowQtyDecimal_Block_Adminhtml_Catalog_Product_Edit_Tab_Inventory</catalog_product_edit_tab_inventory>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+    </global>
+
+    <admin>
+        <routers>
+            <commercers_showQtyDecimal>
+                <use>admin</use>
+                <args>
+                    <module>Commercers_ShowQtyDecimal</module>
+                    <frontName>showqtydecimal</frontName>
+                </args>
+            </commercers_showQtyDecimal>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <commercers_showQtyDecimal>
+                    <file>commercers/showqtydecimal.xml</file>
+                </commercers_showQtyDecimal>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <commercers_showQtyDecimal>
+                    <files>
+                        <default>Commercers_showQtyDecimal.csv</default>
+                    </files>
+                </commercers_showQtyDecimal>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <default>
+        <commercers_massorderprocessing>
+            <general>
+                <enabled>1</enabled>
+            </general>
+        </commercers_massorderprocessing>
+    </default>
+</config>

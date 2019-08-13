@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow everything</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <!-- This is name of the section created by us -->
+                                    <commercers_showQtyDecimal translate="title" module="commercers_showQtyDecimal">
+                                        <!-- Title as shown in User->Roles->Permissions Window -->
+                                        <title>Show Qty Uses Decimals</title>
+                                        <sort_order>1</sort_order>
+                                    </commercers_showQtyDecimal>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

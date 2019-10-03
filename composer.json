@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Commercers_ShowQtyDecimal",
+    "name": "OpenMageModuleFostering\/Commercers_ShowQtyDecimal",
     "type": "magento-module",
     "license": "GLP-3.0",
     "homepage": "",
     "description": "The extension to show Qty Uses Decimals",
     "authors": [
-    {
-        "name": "Commercers",
-        "email": "info@commercers.com"
-    }
-],
+        {
+            "name": "Commercers",
+            "email": "info@commercers.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
